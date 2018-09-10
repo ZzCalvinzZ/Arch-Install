@@ -31,8 +31,8 @@ sample
 
 ## use initial install scripts
 ```
-sh -c "$(curl -fsSL https://goo.gl/uyKXcG)"
-sh -c "$(curl -fsSL https://goo.gl/povLJc)"
+sh -c "$(curl -fsSL https://goo.gl/fqShxa)"
+sh -c "$(curl -fsSL https://goo.gl/FekBSp)"
 
 ```
 
@@ -79,7 +79,7 @@ makepkg -si
 cd ../pacaur
 makepkg -si
 
-sh -c "$(curl -fsSL https://goo.gl/FWW28F)"
+sh -c "$(curl -fsSL https://goo.gl/hvn4X6)"
 ```
 setup autorandr profiles
 (configure your monitors, then save each profile) ex.
