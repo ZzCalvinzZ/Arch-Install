@@ -72,15 +72,6 @@ HOOKS="base udev autodetect modconf block consolefont keyboard encrypt lvm2 file
 
 ## setup OS
 ```
-git clone https://aur.archlinux.org/cower.git
-git clone https://aur.archlinux.org/pacaur.git
-cd cower
-gpg --recv-key <KEYID>
-gpg --lsign <KEYID>
-makepkg -si
-cd ../pacaur
-makepkg -si
-
 sh -c "$(curl -fsSL https://goo.gl/hvn4X6)"
 ```
 setup autorandr profiles
