@@ -74,6 +74,7 @@ HOOKS="base udev autodetect modconf block consolefont keyboard encrypt lvm2 file
 ```
 sh -c "$(curl -fsSL https://goo.gl/hvn4X6)"
 sh -c "$(curl -fsSL https://goo.gl/TAvhB4)"
+sh -c "$(curl -fsSL https://goo.gl/EYAVDq)"
 ```
 setup autorandr profiles
 (configure your monitors, then save each profile) ex.
