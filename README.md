@@ -1,7 +1,7 @@
 ##quick install
 first get the internet connection running and mount your partitions. Then do the following:
 ```
-sh -c "$(curl -fsSL https://goo.gl/B2x1uo)"
+sh -c "$(curl -fsSL https://goo.gl/uyKXcG)"
 sh -c "$(curl -fsSL https://goo.gl/povLJc)"
 
 ```
@@ -13,24 +13,7 @@ pacman -S intel-ucode
 ```
 reboot > login in as calvin
 
-##setup OS
-```
-git clone https://aur.archlinux.org/cower.git
-git clone https://aur.archlinux.org/pacaur.git
-cd cower
-gpg --recv-key <KEYID>
-gpg --lsign <KEYID>
-makepkg -si
-cd ../pacaur
-makepkg -si
-
-sh -c "$(curl -fsSL https://goo.gl/UsLDmA)"
-```
-setup autorandr profiles
-(configure your monitors, then save each profile) ex.
-```
-autorandr -s mobile
-```
+# Optional Encryption
 Setup lvm over luks
 add hooks to /etc/mkinitcpio.conf
 
@@ -53,6 +36,27 @@ add to /etc/mkinitcpio.conf
 ```
 HOOKS="base udev autodetect modconf block consolefont keyboard encrypt lvm2 filesystems fsck"
 ```
+
+##setup OS
+```
+git clone https://aur.archlinux.org/cower.git
+git clone https://aur.archlinux.org/pacaur.git
+cd cower
+gpg --recv-key <KEYID>
+gpg --lsign <KEYID>
+makepkg -si
+cd ../pacaur
+makepkg -si
+
+sh -c "$(curl -fsSL https://goo.gl/FWW28F)"
+```
+setup autorandr profiles
+(configure your monitors, then save each profile) ex.
+```
+autorandr -s mobile
+```
+
+# troubleshooting
 To arch-chroot over luks
 ```
 cryptsetup luksOpen /dev/sdxx crypt
