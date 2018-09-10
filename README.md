@@ -1,11 +1,42 @@
-##quick install
-first get the internet connection running and mount your partitions. Then do the following:
+# Installation
+
+## Internet
+First get the internet connection running
+[Network Configuration](https://wiki.archlinux.org/index.php/Network_configuration)
+
+## create and mount partitions
+Use parted to make the necessary partions on your drive
+[Partitioning](https://wiki.archlinux.org/index.php/partitioning)
+
+sample partitions
+```
+Number  Start    End     Size    File system  Name                  Flags
+ 1      1049kB   600MB   599MB   fat32        EFI system partition  boot, esp
+ 2      601MB    21.1GB  20.9GB               Basic data partition  msftdata
+```
+
+Format new partitions
+```
+mkfs.ext4 /dev/sdx2
+mkdosfs -F 32 -I /dev/sdx1
+```
+
+mount drives from sample partitions
+```
+mount /dev/sdx2 /mnt
+mount /dev/sdx1 /mnt/boot
+```
+
+sample
+
+## use initial install scripts
 ```
 sh -c "$(curl -fsSL https://goo.gl/uyKXcG)"
 sh -c "$(curl -fsSL https://goo.gl/povLJc)"
 
 ```
-###for uefi and intel cpu
+
+### for uefi and intel cpu
 ```
 mount /dev/sdxx /boot
 bootctl install
@@ -13,7 +44,7 @@ pacman -S intel-ucode
 ```
 reboot > login in as calvin
 
-# Optional Encryption
+## Optional Encryption
 Setup lvm over luks
 add hooks to /etc/mkinitcpio.conf
 
@@ -37,7 +68,7 @@ add to /etc/mkinitcpio.conf
 HOOKS="base udev autodetect modconf block consolefont keyboard encrypt lvm2 filesystems fsck"
 ```
 
-##setup OS
+## setup OS
 ```
 git clone https://aur.archlinux.org/cower.git
 git clone https://aur.archlinux.org/pacaur.git
@@ -56,7 +87,7 @@ setup autorandr profiles
 autorandr -s mobile
 ```
 
-# troubleshooting
+## troubleshooting
 To arch-chroot over luks
 ```
 cryptsetup luksOpen /dev/sdxx crypt
