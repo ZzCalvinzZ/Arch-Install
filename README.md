@@ -24,7 +24,6 @@ mkdosfs -F 32 -I /dev/sdx1
 mount drives from sample partitions
 ```
 mount /dev/sdx2 /mnt
-mount /dev/sdx1 /mnt/boot
 ```
 
 sample
@@ -33,12 +32,15 @@ sample
 ```
 sh -c "$(curl -fsSL https://goo.gl/fqShxa)"
 sh -c "$(curl -fsSL https://goo.gl/FekBSp)"
-
+```
+## install grub
+info here: [GRUB](https://wiki.archlinux.org/index.php/GRUB)
+```
+mount /dev/sdxx /boot
 ```
 
 ### for uefi and intel cpu
 ```
-mount /dev/sdxx /boot
 bootctl install
 pacman -S intel-ucode
 ```
