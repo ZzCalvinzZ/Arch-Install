@@ -10,4 +10,5 @@ makepkg -si
 
 pacaur -S google-chrome nerd-fonts-complete ttf-google-fonts-git laptop-mode-tools slack-desktop zsh-pure-prompt spotify dropbox autorandr alarm-clock-applet gst-plugins-good thunderbird zeal i3lock-next-git
 
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
