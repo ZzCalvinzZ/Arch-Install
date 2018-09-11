@@ -1,4 +1,4 @@
-pacman -S fd bat jq percol udisks2 udiskie ntfs-3g xorg xorg-xinit i3 git feh tmux rofi ranger git python python-pip python2 python2-pip go ruby openssh openssl arandr ttf-dejavu ttf-liberation wqy-zenhei noto-fonts mlocate ripgrep playerctl sysstat vlc docker qt4 dhclient libmariadbclient dunst p7zip unrar perl-file-mimeinfo libreoffice-still thunar zathura zathura-pdf-poppler xss-lock xdg-user-dirs acpid simplescreenrecorder powertop kitty xfce4-power-manager cups system-config-printer openresolv
+sudo pacman -S fd bat jq percol udisks2 udiskie ntfs-3g xorg xorg-xinit i3 git feh tmux rofi ranger git python python-pip python2 python2-pip go ruby openssh openssl arandr ttf-dejavu ttf-liberation wqy-zenhei noto-fonts mlocate ripgrep playerctl sysstat vlc docker qt4 dhclient libmariadbclient dunst p7zip unrar perl-file-mimeinfo libreoffice-still thunar zathura zathura-pdf-poppler xss-lock xdg-user-dirs acpid simplescreenrecorder powertop kitty xfce4-power-manager cups system-config-printer openresolv
 
 git clone https://aur.archlinux.org/cower.git
 git clone https://aur.archlinux.org/pacaur.git
