@@ -1,7 +1,7 @@
 sudo pacman -S fd bat jq percol udisks2 udiskie ntfs-3g
 sudo pacman -S git python python-pip python2 python2-pip go ruby
 sudo pacman -S xorg
-sudo pacman -S i3-gaps i3-blocks i3-lock i3-status
+sudo pacman -S i3-gaps i3blocks i3lock i3status
 sudo pacman -S xorg-xinit feh tmux rofi ranger arandr xss-lock dunst powertop
 sudo pacman -S openssh openssl openresolv
 sudo pacman -S playerctl mlocate ripgrep
