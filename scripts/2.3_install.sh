@@ -1,3 +1,4 @@
+source ~/.nvm/nvm.sh
 nvm install node
 sudo pip install virtualenvwrapper
 sudo pip2 install virtualenvwrapper
