@@ -1,3 +1,4 @@
+nvm install node
 sudo pip install virtualenvwrapper
 sudo pip2 install virtualenvwrapper
 sudo ln -s /usr/bin/python2 /usr/local/bin/python2
@@ -20,5 +21,4 @@ sudo usermod -aG docker calvin
 
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
 
-nvm install node
 xdg-user-dirs-update
