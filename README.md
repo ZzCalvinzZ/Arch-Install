@@ -82,6 +82,12 @@ setup autorandr profiles
 autorandr -s mobile
 ```
 
+for laptops
+```
+sudo powertop --calibrate
+sudo powertop --auto-tune
+```
+
 ## troubleshooting
 To arch-chroot over luks
 ```
