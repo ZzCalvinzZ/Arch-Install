@@ -88,6 +88,11 @@ sudo powertop --calibrate
 sudo powertop --auto-tune
 ```
 
+make sure fstab mounts the volume, the boot volume, and swap
+[fstab](https://wiki.archlinux.org/index.php/fstab)
+see sample [here](https://github.com/ZzCalvinzZ/Arch-Install/blob/master/fstab)
+
+
 ## troubleshooting
 To arch-chroot over luks
 ```

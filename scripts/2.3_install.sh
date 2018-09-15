@@ -22,12 +22,16 @@ sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo usermod -aG docker calvin
 
-sudo systemctl enable tlp.service
-sudo systemctl start tlp.service
+sudo systemctl enable powertop.service
+sudo systemctl start powertop.service
 
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
 
 betterlockscreen -u '/home/calvin/.config/wallpapers/lockscreen/'
 
-
 xdg-user-dirs-update
+
+sudo fallocate -l 16G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
