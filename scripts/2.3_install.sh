@@ -1,7 +1,9 @@
 source ~/.nvm/nvm.sh
 nvm install node
-sudo pip install virtualenvwrapper
-sudo pip2 install virtualenvwrapper
+pip install --user virtualenvwrapper
+pip2 install --user virtualenvwrapper
+pip install --user neovim
+
 sudo ln -s /usr/bin/python2 /usr/local/bin/python2
 sudo ln -s /usr/bin/python /usr/local/bin/python
 
@@ -20,6 +22,12 @@ sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo usermod -aG docker calvin
 
+sudo systemctl enable tlp.service
+sudo systemctl start tlp.service
+
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
+
+betterlockscreen -u '/home/calvin/.config/wallpapers/lockscreen/'
+
 
 xdg-user-dirs-update
