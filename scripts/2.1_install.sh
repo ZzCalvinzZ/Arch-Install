@@ -8,7 +8,7 @@ sudo pacman -S playerctl mlocate ripgrep
 sudo pacman -S ttf-dejavu ttf-liberation wqy-zenhei noto-fonts
 sudo pacman -S sysstat vlc docker qt4 dhclient libmariadbclient kitty
 sudo pacman -S p7zip unrar perl-file-mimeinfo libreoffice-still thunar zathura zathura-pdf-poppler
-sudo pacman -S xdg-user-dirs acpid simplescreenrecorder mate-power-manager tlp cups system-config-printer
+sudo pacman -S xdg-user-dirs acpid simplescreenrecorder xfce4-power-manager tlp cups system-config-printer
 
 git clone https://aur.archlinux.org/cower.git
 git clone https://aur.archlinux.org/pacaur.git
