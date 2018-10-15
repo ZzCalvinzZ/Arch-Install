@@ -1,4 +1,4 @@
-sudo pacman -S fd bat jq percol udisks2 udiskie ntfs-3g
+sudo pacman -S fd bat jq percol udisks2 udiskie ntfs-3g syslog-ng
 sudo pacman -S git python python-pip python2 python2-pip go ruby
 sudo pacman -S xorg
 sudo pacman -S i3-gaps i3blocks i3lock-color i3status
