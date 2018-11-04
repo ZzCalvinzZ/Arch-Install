@@ -29,6 +29,11 @@ sudo systemctl start powertop.service
 sudo systemctl enable syslog-ng
 sudo systemctl start syslog-ng
 
+# for networking/dns
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+sudo systemctl enable systemd-resolved.service
+sudo systemctl start systemd-resolved.service
+
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
 
 betterlockscreen -u '/home/calvin/.config/wallpapers/lockscreen/'
