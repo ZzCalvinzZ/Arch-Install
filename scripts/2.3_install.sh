@@ -13,7 +13,6 @@ sudo ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 sudo ln -s ~/fonts/local.conf /etc/fonts/local.conf
 
 gem install tmuxinator
-npm install -g pure-prompt
 
 cd ~/.oh-my-zsh/custom/plugins
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
