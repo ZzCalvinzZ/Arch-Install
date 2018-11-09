@@ -12,6 +12,7 @@ sudo pacman -S p7zip unrar perl-file-mimeinfo libreoffice-still thunar zathura z
 sudo pacman -S xdg-user-dirs acpid simplescreenrecorder xfce4-power-manager tlp cups system-config-printer
 sudo pacman -S chromium pepper-flash firefox
 sudo pacman -S physlock mysql-workbench
+sudo pacman -S cowsay fortune-mod
 
 git clone https://aur.archlinux.org/cower.git
 git clone https://aur.archlinux.org/pacaur.git
