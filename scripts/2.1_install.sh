@@ -27,5 +27,8 @@ pacaur -S nerd-fonts-complete ttf-google-fonts-git laptop-mode-tools
 pacaur -S slack-desktop spotify-stable dropbox autorandr alarm-clock-applet gst-plugins-good
 pacaur -S zeal thunderbird chromium-widevine insomnia
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+export NVS_HOME="$HOME/.nvs"
+git clone https://github.com/jasongin/nvs "$NVS_HOME"
+. "$NVS_HOME/nvs.sh" install
+
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"

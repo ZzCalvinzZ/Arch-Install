@@ -1,5 +1,7 @@
-source ~/.nvm/nvm.sh
-nvm install node
+nvs add lts
+nvs use lts
+nvs link lts
+
 pip install --user virtualenvwrapper
 pip2 install --user virtualenvwrapper
 pip install --user neovim
@@ -27,11 +29,6 @@ sudo systemctl start powertop.service
 # for systemd logging to be viewed with journalctl
 sudo systemctl enable syslog-ng
 sudo systemctl start syslog-ng
-
-# for networking/dns
-sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-sudo systemctl enable systemd-resolved.service
-sudo systemctl start systemd-resolved.service
 
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
 
