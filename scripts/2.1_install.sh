@@ -14,18 +14,14 @@ sudo pacman -S chromium pepper-flash firefox
 sudo pacman -S physlock mysql-workbench
 sudo pacman -S cowsay fortune-mod
 
-git clone https://aur.archlinux.org/cower.git
-git clone https://aur.archlinux.org/pacaur.git
-cd cower
-gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
-gpg --recv-keys --keyserver keyserver.ubuntu.com 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
-cd ../pacaur
-makepkg -si
+cd ..
 
-pacaur -S nerd-fonts-complete ttf-google-fonts-git laptop-mode-tools
-pacaur -S slack-desktop spotify-stable dropbox autorandr alarm-clock-applet gst-plugins-good
-pacaur -S zeal thunderbird chromium-widevine insomnia
+yay -S nerd-fonts-complete ttf-google-fonts-git laptop-mode-tools
+yay -S slack-desktop spotify-stable dropbox autorandr alarm-clock-applet gst-plugins-good
+yay -S zeal thunderbird chromium-widevine insomnia
 
 export NVS_HOME="$HOME/.nvs"
 git clone https://github.com/jasongin/nvs "$NVS_HOME"
