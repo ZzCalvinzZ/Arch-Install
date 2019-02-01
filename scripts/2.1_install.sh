@@ -13,6 +13,7 @@ sudo pacman -S xdg-user-dirs acpid simplescreenrecorder xfce4-power-manager tlp 
 sudo pacman -S pepper-flash firefox
 sudo pacman -S physlock mysql-workbench
 sudo pacman -S cowsay fortune-mod
+sudo pacman -S clamav
 
 git clone https://aur.archlinux.org/yay.git
 cd yay

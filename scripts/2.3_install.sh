@@ -30,6 +30,12 @@ sudo systemctl start powertop.service
 sudo systemctl enable syslog-ng
 sudo systemctl start syslog-ng
 
+#antivirus
+sudo systemctl enable clamav-freshclam
+sudo systemctl start clamav-freshclam
+sudo systemctl enable clamav-daemon
+sudo systemctl start clamav-daemon
+
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
 
 betterlockscreen -u '/home/calvin/.config/wallpapers/lockscreen/'
