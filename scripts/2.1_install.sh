@@ -15,6 +15,7 @@ sudo pacman -S physlock mysql-workbench
 sudo pacman -S cowsay fortune-mod
 sudo pacman -S clamav
 sudo pacman -S gvfs gvfs-smb 
+sudo pacman -S hub
 
 git clone https://aur.archlinux.org/yay.git
 cd yay

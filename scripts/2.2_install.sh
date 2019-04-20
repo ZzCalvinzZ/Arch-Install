@@ -1,4 +1,6 @@
-ssh-keygen -t rsa -b 4096 -C "calvinc@surveymonkey.com"
+echo "enter the email you would like to use for your ssh keys"
+read keyaddr
+ssh-keygen -t rsa -b 4096 -C "$keyaddr"
 sudo sh -c "curl https://raw.githubusercontent.com/b4b4r07/ssh-keyreg/master/bin/ssh-keyreg -o /usr/local/bin/ssh-keyreg && chmod +x /usr/local/bin/ssh-keyreg"
 ssh-keyreg -p ~/.ssh/id_rsa.pub -u ZzCalvinzZ github
 

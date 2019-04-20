@@ -16,9 +16,6 @@ sudo ln -s ~/fonts/local.conf /etc/fonts/local.conf
 
 gem install tmuxinator
 
-cd ~/.oh-my-zsh/custom/plugins
-git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
-
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo usermod -aG docker calvin
