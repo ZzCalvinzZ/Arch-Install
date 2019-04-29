@@ -16,6 +16,7 @@ sudo pacman -S cowsay fortune-mod
 sudo pacman -S clamav
 sudo pacman -S gvfs gvfs-smb 
 sudo pacman -S hub
+sudo pacman -S pacman-contrib
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
