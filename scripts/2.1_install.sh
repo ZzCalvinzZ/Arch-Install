@@ -26,6 +26,7 @@ cd ..
 yay -S nerd-fonts-complete ttf-google-fonts-git laptop-mode-tools
 yay -S slack-desktop spotify-stable dropbox autorandr alarm-clock-applet gst-plugins-good
 yay -S zeal thunderbird google-chrome insomnia
+yay -S pyenv
 
 export NVS_HOME="$HOME/.nvs"
 git clone https://github.com/jasongin/nvs "$NVS_HOME"
