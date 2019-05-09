@@ -3,7 +3,7 @@ sudo pacman -S ntfs-3g syslog-ng httpie
 sudo pacman -S git python python-pip python2 python2-pip go ruby
 sudo pacman -S xorg
 sudo pacman -S i3-gaps i3blocks i3status
-sudo pacman -S xorg-xinit feh tmux rofi ranger arandr xss-lock dunst powertop
+sudo pacman -S xorg-xinit feh tmux ranger arandr xss-lock dunst powertop
 sudo pacman -S openssh openssl
 sudo pacman -S playerctl mlocate ripgrep
 sudo pacman -S ttf-dejavu ttf-liberation wqy-zenhei noto-fonts
@@ -16,6 +16,8 @@ sudo pacman -S cowsay fortune-mod
 sudo pacman -S clamav
 sudo pacman -S gvfs gvfs-smb 
 sudo pacman -S hub
+sudo pacman -S albert
+# sudo pacman -S rofi
 sudo pacman -S pacman-contrib
 
 git clone https://aur.archlinux.org/yay.git
@@ -24,9 +26,10 @@ makepkg -si
 cd ..
 
 yay -S nerd-fonts-complete ttf-google-fonts-git laptop-mode-tools
-yay -S slack-desktop spotify-stable dropbox autorandr alarm-clock-applet gst-plugins-good
-yay -S zeal thunderbird google-chrome insomnia
-yay -S pyenv
+yay -S slack-desktop spotify-stable dropbox autorandr gst-plugins-good
+yay -S zeal google-chrome insomnia
+yay -S pyenv tmuxinator
+# yay -S rofi-calc buku buku_run-git
 
 export NVS_HOME="$HOME/.nvs"
 git clone https://github.com/jasongin/nvs "$NVS_HOME"

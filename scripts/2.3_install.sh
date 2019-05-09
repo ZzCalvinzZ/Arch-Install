@@ -2,19 +2,18 @@ nvs add lts
 nvs use lts
 nvs link lts
 
-pip install --user virtualenvwrapper
-pip2 install --user virtualenvwrapper
-pip install --user neovim
+git clone https://github.com/momo-lab/pyenv-install-latest.git "$(pyenv root)"/plugins/pyenv-install-latest
+pyenv install-latest
+pyenv virtualenv $(pyenv install-latest --print) python3
+pyenv global python3
 
-sudo ln -s /usr/bin/python2 /usr/local/bin/python2
-sudo ln -s /usr/bin/python /usr/local/bin/python
+pip install neovim flake8 black ipdb ipython
+pip install --user neovim
 
 sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 sudo ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
 sudo ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 sudo ln -s ~/fonts/local.conf /etc/fonts/local.conf
-
-gem install tmuxinator
 
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
