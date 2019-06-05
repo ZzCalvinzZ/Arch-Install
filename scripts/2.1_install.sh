@@ -16,7 +16,7 @@ sudo pacman -S cowsay fortune-mod
 sudo pacman -S clamav
 sudo pacman -S gvfs gvfs-smb 
 sudo pacman -S hub
-sudo pacman -S albert
+sudo pacman -S weechat
 # sudo pacman -S rofi
 sudo pacman -S pacman-contrib
 sudo pacman -S thunar thunar-archive-plugin xarchiver
@@ -30,6 +30,7 @@ yay -S nerd-fonts-complete ttf-google-fonts-git laptop-mode-tools
 yay -S slack-desktop spotify-stable dropbox autorandr gst-plugins-good
 yay -S zeal google-chrome
 yay -S pyenv tmuxinator
+yay -S ulauncher
 
 export NVS_HOME="$HOME/.nvs"
 git clone https://github.com/jasongin/nvs "$NVS_HOME"
