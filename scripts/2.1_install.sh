@@ -17,7 +17,6 @@ sudo pacman -S clamav
 sudo pacman -S gvfs gvfs-smb 
 sudo pacman -S hub
 sudo pacman -S weechat
-# sudo pacman -S rofi
 sudo pacman -S pacman-contrib
 sudo pacman -S thunar thunar-archive-plugin xarchiver
 
@@ -31,6 +30,7 @@ yay -S slack-desktop spotify-stable dropbox autorandr gst-plugins-good
 yay -S zeal google-chrome
 yay -S pyenv tmuxinator
 yay -S ulauncher
+yay -S wpa_actiond 
 
 export NVS_HOME="$HOME/.nvs"
 git clone https://github.com/jasongin/nvs "$NVS_HOME"
