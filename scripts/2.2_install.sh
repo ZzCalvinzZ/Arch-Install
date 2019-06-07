@@ -7,6 +7,7 @@ ssh-keyreg -p ~/.ssh/id_rsa.pub -u ZzCalvinzZ github
 mkdir dev; cd dev
 git clone https://github.com/ZzCalvinzZ/dotfiles.git
 cd ~
+rm -rf ~/.config
 ln -sfFnv ~/dev/dotfiles/{.,}* ~/
 
 zsh
