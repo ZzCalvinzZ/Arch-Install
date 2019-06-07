@@ -33,6 +33,9 @@ sample
 sh -c "$(curl -fsSL https://goo.gl/fqShxa)"
 sh -c "$(curl -fsSL https://goo.gl/FekBSp)"
 ```
+## install graphics drivers
+[Xorg](https://wiki.archlinux.org/index.php/Xorg)
+
 ## install grub
 info here: [GRUB](https://wiki.archlinux.org/index.php/GRUB)
 ```
