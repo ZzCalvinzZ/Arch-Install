@@ -29,7 +29,7 @@ makepkg -si
 cd ..
 
 yay -S ttf-font-awesome-4 ttf-google-fonts-git laptop-mode-tools
-yay -S slack-desktop spotify-stable dropbox autorandr gst-plugins-good
+yay -S slack-desktop spotify dropbox autorandr gst-plugins-good
 yay -S zeal google-chrome
 yay -S pyenv tmuxinator
 yay -S ulauncher
