@@ -35,6 +35,7 @@ yay -S pyenv tmuxinator
 yay -S ulauncher
 yay -S gtk-theme-arc-gruvbox-git
 yay -S wpa_actiond 
+yay -S neovim_nightly 
 
 export NVS_HOME="$HOME/.nvs"
 git clone https://github.com/jasongin/nvs "$NVS_HOME"
