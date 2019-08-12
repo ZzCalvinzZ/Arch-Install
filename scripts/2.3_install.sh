@@ -22,6 +22,9 @@ sudo usermod -aG docker calvin
 sudo systemctl enable powertop.service
 sudo systemctl start powertop.service
 
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+
 # for systemd logging to be viewed with journalctl
 sudo systemctl enable syslog-ng
 sudo systemctl start syslog-ng
