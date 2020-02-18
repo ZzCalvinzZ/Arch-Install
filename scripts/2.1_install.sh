@@ -5,11 +5,11 @@ sudo pacman -S xorg
 sudo pacman -S i3-gaps
 sudo pacman -S i3blocks
 sudo pacman -S i3status
-sudo pacman -S xorg-xinit feh tmux ranger arandr xss-lock dunst powertop
+sudo pacman -S xorg-xinit feh tmux arandr xss-lock dunst powertop
 sudo pacman -S openssh openssl
 sudo pacman -S playerctl mlocate ripgrep
 sudo pacman -S ttf-dejavu ttf-hack ttf-liberation wqy-zenhei noto-fonts
-sudo pacman -S sysstat vlc docker qt4 dhclient libmariadbclient kitty
+sudo pacman -S sysstat vlc docker qt4 dhclient libmariadbclient
 sudo pacman -S p7zip unrar perl-file-mimeinfo libreoffice-still
 sudo pacman -S xdg-user-dirs acpid simplescreenrecorder xfce4-power-manager tlp cups system-config-printer
 sudo pacman -S pepper-flash firefox
@@ -22,7 +22,7 @@ sudo pacman -S weechat
 sudo pacman -S pacman-contrib
 sudo pacman -S thunar thunar-archive-plugin xarchiver
 sudo pacman -S arc-icon-theme
-sudo pacman -S alacritty
+sudo pacman -S alacritty kitty
 sudo pacman -S bluez bluez-utils blueman
 
 git clone https://aur.archlinux.org/yay.git
@@ -39,9 +39,8 @@ yay -S gtk-theme-arc-gruvbox-git
 yay -S wpa_actiond
 yay -S neovim_nightly
 yay -S gllock-git
+yay -S lf
 
-export NVS_HOME="$HOME/.nvs"
-git clone https://github.com/jasongin/nvs "$NVS_HOME"
-. "$NVS_HOME/nvs.sh" install
+curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
